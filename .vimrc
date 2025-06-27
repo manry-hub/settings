@@ -22,4 +22,4 @@ set hlsearch                  " Highlight hasil pencarian
 set ruler                     " Tampilkan baris dan kolom di kanan bawah
 set showmatch                 " Tampilkan pasangan kurung
 set scrolloff=8               " Selalu sisakan 8 baris di atas/bawah kursor
-set signcolumn=yes            " Kolom untuk tanda (git/linter dsb
+set signcolumn=yes            " Kolom untuk tanda 
