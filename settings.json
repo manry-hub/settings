@@ -44,7 +44,6 @@
   ],
   "workbench.startupEditor": "none",
   "editor.guides.bracketPairs": true,
-  "react-native-tools.showUserTips": false,
   "redhat.telemetry.enabled": true,
   "workbench.colorTheme": "One Dark Pro Darker",
   "codesnap.transparentBackground": true,
