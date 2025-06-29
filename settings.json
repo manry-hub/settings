@@ -49,7 +49,7 @@
     "workbench.layoutControl.enabled": false,
     "editor.minimap.size": "fit",
     "oneDarkPro.bold": true,
-    "explorer.compactFolders": false,
+
     "extensions.autoUpdate": false,
     "files.associations": {
         "*.css": "tailwindcss"
@@ -74,5 +74,26 @@
     "terminal.integrated.env.linux": {},
     "prettier.tabWidth": 4,
     "material-icon-theme.folders.theme": "classic",
-    "material-icon-theme.opacity": 0.8
+    "material-icon-theme.opacity": 0.8,
+
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/.turbo": true,
+        "**/.vercel": true,
+        "**/.expo": true,
+        "**/packages/**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.git": true,
+        "**/.env": true,
+        "**/.env.*": true,
+        "**/yarn.lock": false,
+        "**/prisma/migrations": true,
+        "**/coverage": true,
+        "**/logs": true,
+        "**/tmp": true,
+        "**/.cache": true,
+        "**/.eslintcache": true
+    }
 }
