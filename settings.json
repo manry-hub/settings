@@ -63,6 +63,7 @@
     "path-intellisense.showHiddenFiles": true,
     "npm-intellisense.packageSubfoldersIntellisense": true,
     "editor.minimap.autohide": true,
+    "workbench.editor.enablePreview": true,
 
     "javascript.updateImportsOnFileMove.enabled": "never",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
