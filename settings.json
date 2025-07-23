@@ -95,5 +95,5 @@
     },
     "editor.formatOnSave": true,
     "window.newWindowProfile": "Node + Ts",
-    "prettier.printWidth": 130
+    "prettier.printWidth": 150
 }
