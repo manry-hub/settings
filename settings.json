@@ -25,7 +25,6 @@
     "editor.codeLensFontFamily": "Fira Code, monospace",
     "editor.fontLigatures": false,
     "editor.formatOnType": false,
-    "editor.formatOnSave": true,
     "editor.letterSpacing": 0.4,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.suggestSelection": "first",
@@ -93,5 +92,8 @@
         "**/tmp": true,
         "**/.cache": true,
         "**/.eslintcache": true
-    }
+    },
+    "editor.formatOnSave": true,
+    "window.newWindowProfile": "Node + Ts",
+    "prettier.printWidth": 130
 }
