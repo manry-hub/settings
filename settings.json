@@ -35,10 +35,7 @@
     "json.schemas": [],
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 15000,
-    "workbench.settings.applyToAllProfiles": [
-        "workbench.startupEditor",
-        "codesnap.transparentBackground"
-    ],
+    "workbench.settings.applyToAllProfiles": ["workbench.startupEditor", "codesnap.transparentBackground"],
     "workbench.startupEditor": "none",
     "editor.guides.bracketPairs": true,
     "workbench.colorTheme": "One Dark Pro Darker",
@@ -95,5 +92,7 @@
     },
     "editor.formatOnSave": true,
     "window.newWindowProfile": "Node + Ts",
-    "prettier.printWidth": 150
+    "prettier.printWidth": 150,
+    "continue.enableTabAutocomplete": false,
+    "continue.showInlineTip": false
 }
