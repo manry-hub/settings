@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-echo "Im Here"
-
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -11,26 +9,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="gnzh"
-
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/man/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/ughway/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/ughway/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/man/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-conda config --set auto_activate_base false
-
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,7 +70,7 @@ conda config --set auto_activate_base false
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,26 +88,34 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='nvim'
 # fi
 
+# Compilation flags
+# export ARCHFLAGS="-arch $(uname -m)"
 
-
-
-# fnm
-FNM_PATH="/home/ughway/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/ughway/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
-
-# fnm
-FNM_PATH="/home/ughway/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/ughway/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # fnm
 FNM_PATH="/home/ughway/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/ughway/.local/share/fnm:$PATH"
+  export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
+
+# java azul
+export JAVA_HOME=/opt/zulu/zulu24.32.13-ca-jdk24.0.2-linux_x64
+export PATH=$JAVA_HOME/bin:$PATH
+
+#conda
+source ~/miniconda3/etc/profile.d/conda.sh
+
+# composer
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
